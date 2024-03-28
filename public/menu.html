@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+<meta charset="UTF-8">
+<title>Blurry Splash-Art Challenge</title>
+<link rel="stylesheet" href="./styles/style_menu.css">
+</head>
+
+<body>
+    <a href="menu.html">
+        <img class="logo" src="styles/logo.png">
+    </a>
+<h1 class=titre>Blurry Splash-Art Challenge</h1>
+<div class=milieu>
+<input id="inputText" class="inp username" type="text" placeholder="Pseudo" maxlength="13"></input>
+<button id="soloButton" class="sub" onclick="redirigerSolo()">Jeu Solo</button>
+<button id="createRoomButton" class="sub" onclick="creationSalle()">Creer une Salle</button>
+<input id="inputCode" class="inp menu" type="text" placeholder="Code pour la Salle" maxlength="13">
+<button id="joinRoomButton" class="sub" onclick="rejoindreSalle()">Rejoindre une Salle</button>
+</div>
+
+<p class=fin>By Dieu & Barty Poluip</p>
+<script>
+        function redirigerSolo() {
+            var nomUtilisateur = encodeURIComponent(document.getElementById("inputText").value);
+            window.location.href = "menu_solo.html?username=" + nomUtilisateur;
+        }
+
+        function creationSalle() {
+            var nomSalle = Math.floor(Math.random() * 1000) + 1;
+            var nomUtilisateur = encodeURIComponent(document.getElementById("inputText").value);
+            window.location.href = "room.html?room=" + nomSalle + "&username=" + nomUtilisateur;
+        }
+
+        function rejoindreSalle(){
+            var inputCodeValue = document.getElementById("inputCode").value;
+            var nomUtilisateur = encodeURIComponent(document.getElementById("inputText").value);
+            window.location.href = "room.html?room=" + inputCodeValue + "&username=" + nomUtilisateur;
+        }
+    </script>
+<script src="client_menu.js"></script>
+</body>
+</html>

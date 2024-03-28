@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+div {
+    background-color: #141414;
+}
+
+h1 {
+    font-size: 4vh;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+
+
+.milieu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 40%;
+    border-style: solid;
+    border-radius: 2em;
+    border-color: #d4d4d4;
+    padding: 1vw;
+    height: fit-content;
+
+}
+
+.titre {
+    margin-bottom: 1.2vh;
+    margin-top: 5%;
+    top: 10%;
+    color: #d4d4d4;
+    animation: resizeRotate 1s ease-in-out infinite;
+}
+
+
+
+.inp {
+    margin: 2%;
+    padding: 0.5vw;
+    width: 35%;
+    height: 10%;
+    font-size: 2.2vh;
+    font-weight: bold;
+    border: 0.2vw;
+    border-style: solid;
+    border-radius: 20em;
+    border-color: #d4d4d4;
+    background-color: black;
+    color: #d4d4d4;
+}
+
+.sub {
+    margin: 2%;
+    text-align: center;
+    width: 39%;
+    padding: 0.5vw;
+    top: 0px;
+    height: 10%;
+    font-size: 1.3vw;
+    font-weight: bold;
+    border-radius: 20em;
+    border: 0.2vw;
+    border-style: solid;
+    color: black;
+    background-color: #d4d4d4;
+    transition-duration: 0.3s;
+}
+
+.sub:hover {
+    background-color: black;
+    color: #d4d4d4;
+    border-color: #d4d4d4;
+}
+
+.sub:active {
+    background-color: green;
+}
+
+.fin {
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+    font-size: 0.5vw;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: #d4d4d4;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+
+.logo {
+    position: fixed;
+    left: 2vw;
+    top: 2vh;
+    max-height: 10vh;
+}
+
+
+
+@keyframes floutage {
+    0%,100% {
+        filter: blur(0);
+    }
+    50% {
+        filter: blur(0.5vw);
+    }
+}
+
+@keyframes resizeRotate {
+    0%, 100% { 
+        transform: scale(1) rotate(10deg); /* Taille de départ et de fin */
+    }
+    50% { 
+        transform: scale(2) rotate(-10deg); /* Taille maximale pendant la transition */
+    }
+}
+
+.gauche {
+    color:#d4d4d4;
+}

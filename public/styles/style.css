@@ -1,0 +1,248 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    background-color: black;
+    align-content: center;
+    text-align: center;
+}
+
+div {
+    background-color: #141414;
+}
+
+h1 {
+    font-size: 4vh;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+
+
+.milieu {
+    border-style: solid;
+    border-radius: 2em;
+    border-color: #d4d4d4;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding: 1vw;
+    height: fit-content;
+
+}
+
+.titre {
+    margin-bottom: 1.2vh;
+    margin-top: 1vh;
+    top: 10%;
+    color: #d4d4d4;
+}
+
+.skin {
+    margin: 0vw;
+    max-width: 70%;
+    min-height: 70%;
+    border-color: #d4d4d4;
+    border-style: solid;
+    border-radius: 1em;
+
+}
+
+.formulaire {
+    display: flex;
+    height: fit-content;
+    margin: 2vh;
+    margin-bottom: 1vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.inp {
+    margin: 1vw;
+    margin-right: 0%;
+    padding: 0.5vw;
+    width: 35%;
+    height: 10%;
+    font-size: 2.2vh;
+    font-weight: bold;
+    border: 0.2vw;
+    border-style: solid;
+    border-radius: 20em;
+    border-color: #d4d4d4;
+    background-color: black;
+    color: #d4d4d4;
+}
+
+.sub {
+    text-align: center;
+    margin: 1vw;
+    width: 10%;
+    padding: 0.5vw;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
+    top: 0px;
+    height: 10%;
+    font-size: 2vw;
+    font-weight: bold;
+    border-radius: 20em;
+    border: 0.2vw;
+    border-style: solid;
+    color: black;
+    background-color: #d4d4d4;
+    transition-duration: 0.3s;
+}
+
+.sub:hover {
+    background-color: black;
+    color: #d4d4d4;
+    border-color: #d4d4d4;
+}
+
+.sub:active {
+    padding: 0.2vw;
+    width: 5%;
+    font-size: 1.2vw;
+}
+
+.fin {
+    position: fixed;
+    bottom: 1%;
+    font-size: 0.5vw;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: #d4d4d4;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.message {
+    color: #d4d4d4;
+    font-size: 2vh;
+    font-family: 'Trebuchet MS';
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.score{
+    color:#d4d4d4;
+    font-size: 50px;
+    font-family: 'Trebuchet MS';
+    color: #d4d4d4;
+    font-size: 3.3vh;
+    font-family: 'Trebuchet MS';
+    margin-top: 1vh;
+    margin-bottom: 0px;
+}
+
+
+.timer {
+    color:#d4d4d4;
+    font-family: 'Trebuchet MS';
+    font-size: 3.3vh;
+    margin-top: 0.7vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .skin {
+        position: fixed;
+        top: 20vh;
+        left: 5vw;
+        max-width: 100%;
+        min-height: 0%;
+        width: 90vw;
+        margin: 0vw;
+        border-color: #d4d4d4;
+        border-style: solid;
+        border-radius: 1em;
+    }
+
+    .formulaire {
+        position: fixed;
+        top: 45vh;
+    }
+
+    .inp {
+        position: fixed;
+        left: 5vw;
+        width: 60%;
+        top: 47vh;
+        height: 5vh;
+        font-size: 4vh;
+        border-style: 1.1vw solid;
+    }
+
+
+    .sub {
+        position: fixed;
+        left: 73vw;
+        top: 47vh;
+        width: 15%;
+        height: 5vh;
+        font-size: 3vh;
+    }
+
+    .message {
+        position: fixed;
+        top: 56vh;
+        font-size: 4vh;
+        left: 5vw;
+    }
+
+    .score {
+        position: fixed;
+        top: 60vh;
+        font-size: 5vh;
+        left: 5vw;
+    }
+
+    .fin {
+        position: fixed;
+        bottom: 1vh;
+        font-size: 2vh;
+        left: 0vw;
+    }
+}
+
+.logo {
+    position: fixed;
+    left: 2vw;
+    top: 2vh;
+    max-height: 10vh;
+}
+
+.end-screen {
+    border-style: solid;
+    border-radius: 2em;
+    border-color: #d4d4d4;
+    position: fixed;
+    top:30%;
+    left:40%;
+    color:#d4d4d4;
+    font-family: 'Trebuchet MS';
+    font-size: 3.3vh;
+}
+
+.end-screen button {
+    text-align: center;
+    margin: 1vw;
+    padding: 0.5vw;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
+    font-size: 2vw;
+    font-weight: bold;
+    border-radius: 20em;
+    border: 0.2vw;
+    border-style: solid;
+    color: black;
+    background-color: #d4d4d4;
+    transition-duration: 0.3s;
+}
+
+.end-screen button:hover {
+    background-color: black;
+    color: #d4d4d4;
+    border-color: #d4d4d4;
+}
+.hidden {
+    display: none;
+}

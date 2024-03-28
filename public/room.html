@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle Page</title>
+    <link rel="stylesheet" href="./styles/style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Blurry Splash-Art Challenge</div>
+        <a href="menu.html">
+            <img class="logo" src="styles/logo.png">
+        </a>
+        <p class="RoomNumber">Nom de la Salle : <span id="roomNumber"></span> </p>
+        <div class="content">
+            <div class="tableau_score" id="scoresTable">
+            </div>
+            <div class="gauche">
+                <button id="lauchButton" class="lauchButton">Démarrer La Partie</button>
+                <canvas id="canvas" class="skin"></canvas>
+            </div>
+            <div class="droite">
+                <div class="chat">
+                </div>
+                <div class="input-area">
+                    <input id="messageText" type="text" placeholder="Nom du Champion">
+                    <button id="switchButton">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class=fin>By Dieu & Barty Poluip</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="client_room.js"></script>
+    <script>
+     
+    </script>
+</body>
+</html>

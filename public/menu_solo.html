@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+<meta charset="UTF-8">
+<title>Blurry Splash-Art Challenge</title>
+<link rel="stylesheet" href="./styles/style_menu.css">
+</head>
+
+<body>
+    <a href="menu.html">
+        <img class="logo" src="styles/logo.png">
+    </a>
+<h1 class=titre>Blurry Splash-Art Challenge</h1>
+<div class=milieu>
+<button id="soloButton" class="sub" onclick="redirigerInfini()">Mode Sans Fin</button>
+<button id="createRoomButton" class="sub" onclick="redirigerMinutes()">Mode 2 Minutes</button>
+</div>
+<p class="gauche" id="leaderboard">Classement 2 Minutes :</p>
+<p class=fin>By Dieu & Barty Poluip</p>
+<script>
+        function redirigerInfini() {
+            window.location.href = "JeuSolo.php";
+            localStorage.setItem('score', 0);
+        }
+
+        function redirigerMinutes() {
+            const params = new URLSearchParams(window.location.search);
+            var username = params.get('username');
+            window.location.href = "Jeu_2minutes.php?username="+username;
+            localStorage.setItem('score2', 0);
+            localStorage.setItem('tempsRestant', 60);
+            localStorage.setItem('partieTerminee',false);
+        }
+    </script>
+<script src="client_menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    background-color: black;
+    align-content: center;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+.title {
+    position: fixed;
+    top: 4vh;
+    color: #d4d4d4;
+    font-size: 4vh;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+.gauche {
+    display: flex;
+    padding: 0px;
+    position: fixed;
+    left: 20.2vw;
+    top: 15%;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+.tableau_score {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    padding: 1em;
+    position: fixed;
+    left: 1vw;
+    top: 15%;
+    height: fit-content;
+    max-height: 60vh;
+    width: 16.3vw;
+    border-style: solid;
+    border-radius: 2em;
+    border-color: #d4d4d4;
+    overflow-y: scroll;
+    color: #d4d4d4;
+    font-size: 2.5vh;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+
+::-webkit-scrollbar { 
+    height: 90%;
+}
+
+::-webkit-scrollbar-track {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    display: block;
+    border-style: solid;
+    border-radius: 2vw;
+    color:#d4d4d4;
+    background-color: #656565;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4f4f4f;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #232323;
+}
+
+.tableau_score p {
+    color: #d4d4d4;
+    font-size: 2.5vh;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+
+
+.skin{
+    border-style: solid;
+    border-radius: 3vh;
+    border-color: #d4d4d4;
+    height: inherit;
+    width: 55vw;
+    margin: 0vw;
+
+}
+
+
+
+.droite {
+    padding: 0px;
+}
+.chat {
+    text-align: left;
+    font-size: 3vh;
+    position: fixed;
+    right: 1vw;
+    top: 15vh;
+    border-style: solid;
+    border-radius: 3vh;
+    border-color: #d4d4d4;
+    padding: 2vw;
+    width: 18vw;
+    height: 50vh;
+    overflow-y: scroll;
+    color: #d4d4d4;
+}
+.input-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.input-area input[type="text"] {
+    position: fixed;
+    right: 7vw;
+    top: 78vh;
+    width: 13.5vw;
+    padding: 1em;
+    font-size: 2.2vh;
+    font-weight: bold;
+    border: 0.2vw;
+    border-style: solid;
+    border-radius: 20em;
+    border-color: #d4d4d4;
+    background-color: black;
+    color: #d4d4d4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.input-area button {
+    position: fixed;
+    right: 1vw;
+    top: 78vh;
+    width: 5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    border-radius: 20em;
+    border: 0.2vw;
+    border-style: solid;
+    color: black;
+    background-color: #d4d4d4;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    padding: 0.5vw;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
+}
+
+.input-area button:hover {
+    background-color: black;
+    color: #d4d4d4;
+    border-color: #d4d4d4;
+}
+
+
+.input-area button:active {
+    background-color: green;
+}
+
+
+.fin {
+    position: fixed;
+    bottom: 1%;
+    font-size: 0.5vw;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    color: #d4d4d4;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.lauchButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+    font-size: 2vw;
+    font-weight: bold;
+    border-radius: 20em;
+    border: 0.2vw;
+    border-style: solid;
+    color: black;
+    background-color: #d4d4d4;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    padding: 0.5vw;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
+}
+
+.lauchButton:hover {
+    background-color: black;
+    color: #d4d4d4;
+    border-color: #d4d4d4;
+}
+.victoire {
+    color: #00ff00;
+}
+
+.logo {
+    position: fixed;
+    left: 2vw;
+    top: 2vh;
+    max-height: 10vh;
+}
+
+.RoomNumber {
+    color:#d4d4d4;
+    position: fixed;
+    top: 5%;
+    right: 0;
+    margin: 20px;
+    padding: 10px; 
+    font-size: 2vh;
+    font-family: 'Trebuchet MS';
+}
+
+.username-cell {
+    text-decoration: underline;
+}
